@@ -53,21 +53,64 @@ body {
 	}
 }
 
-.tl-right-nav li {
-	width: 175px;
-	border-left: 1px solid #111;
+.tl-right-nav {
+	font-size: 13px;
 
-	a {
-		color: #fff !important;
-		text-transform: uppercase;
-		font-weight: bold;
-		padding-top: 13px;
-		padding-bottom: 12px;
+	li.dropdown {
+		border-left: 1px solid #111;
+
+		> a {
+			color: #fff !important;
+			padding-top: 13px;
+			padding-bottom: 12px;
+
+			.caret {
+				float: right;
+				margin-top: 10px;
+				display: none;
+			}
+		}
+
+		ul {
+			background: #08654b;
+			font-size: 13px;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+
+			li a {
+				color: #039c75;
+				text-align: center;
+			}
+
+			li.tl-active a {
+				color: #fff;
+			}
+
+			li a:hover {
+				background: transparent;
+				color: #fff;
+			}
+		}
 	}
-}
 
-.tl-right-nav li:hover {
-	background: #047d5e;
+	li.dropdown, li {
+		width: 175px;
+
+		a {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+
+	li.dropdown:hover {
+		background: #047d5e;
+
+		a .caret,
+		ul {
+			display: block;
+		}
+	}
 }
 
 @mixin icon_size($size) {
