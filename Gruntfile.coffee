@@ -12,11 +12,15 @@ module.exports = (grunt)->
     uncss:
       dist:
         files:
-          'app/css/compiled.min.css': ['app/index.html']
+          'app/css/compiled/compiled.min.css': ['app/index.html']
     concat:
       js:
-        src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/bootstrap/dist/js/bootstrap.min.js', 'app/js/*.js']
-        dest: 'app/js/compiled.min.js'
+        src: [
+          'app/js/jquery.min.js',
+          'app/js/jquery-ui.min.js',
+          'app/js/bootstrap.min.js',
+          'app/js/script.js']
+        dest: 'app/js/compiled/compiled.min.js'
     watch:
       html:
         files: ['app/index.html']

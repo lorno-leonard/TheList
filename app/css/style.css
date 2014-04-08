@@ -29,6 +29,7 @@ body {
   border: none;
   height: 30px;
   color: #fff;
+  width: 400px;
 }
 .tl-search input::-webkit-input-placeholder {
   font-style: italic;
@@ -73,6 +74,8 @@ body {
 .tl-right-nav li.dropdown ul li a {
   color: #039c75;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 4px;
 }
 .tl-right-nav li.dropdown ul li.tl-active a {
   color: #fff;
@@ -95,6 +98,37 @@ body {
 .tl-right-nav li.dropdown:hover ul {
   display: block;
 }
+.tl-right-nav ul.dropdown-menu.tl-price-range li {
+  width: 300px;
+  padding: 13px 40px 50px 30px;
+}
+.tl-right-nav ul.dropdown-menu.tl-price-range li #tl-slider {
+  background: #047d5e;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.8);
+}
+.tl-right-nav ul.dropdown-menu.tl-price-range li #tl-slider .ui-widget-header {
+  background: #047d5e;
+}
+.tl-right-nav ul.dropdown-menu.tl-price-range li #tl-slider .ui-slider-handle {
+  background: url(../images/sprites.png) 0px 22px;
+  height: 22px;
+  width: 22px;
+  border: none;
+  top: -0.35em;
+}
+.tl-right-nav ul.dropdown-menu.tl-price-range li #tl-slider .ui-slider-handle:hover {
+  cursor: pointer;
+}
+.tl-right-nav ul.dropdown-menu.tl-price-range li #tl-slider .tooltip-arrow {
+  border-bottom-color: #fff;
+}
+.tl-right-nav ul.dropdown-menu.tl-price-range li #tl-slider .tooltip-inner {
+  background: #fff;
+  color: #4f4f4f;
+}
 
 .tl-icon-white {
   width: 25px;
@@ -113,39 +147,39 @@ body {
 }
 
 .icon-event-white {
-  background: url(../images/sprites.png) 0px 45px;
+  background: url(../images/sprites.png) 0px 67px;
 }
 
 .icon-calendar-white {
-  background: url(../images/sprites.png) -25px 45px;
+  background: url(../images/sprites.png) -25px 67px;
 }
 
 .icon-location-white {
-  background: url(../images/sprites.png) -50px 45px;
+  background: url(../images/sprites.png) -50px 67px;
 }
 
 .icon-price-white {
-  background: url(../images/sprites.png) -75px 45px;
+  background: url(../images/sprites.png) -75px 67px;
 }
 
 .icon-search-white {
-  background: url(../images/sprites.png) -100px 45px;
+  background: url(../images/sprites.png) -100px 67px;
 }
 
 .icon-event-gray {
-  background: url(../images/sprites.png) 0px 20px;
+  background: url(../images/sprites.png) 0px 42px;
 }
 
 .icon-calendar-gray {
-  background: url(../images/sprites.png) -20px 20px;
+  background: url(../images/sprites.png) -20px 42px;
 }
 
 .icon-location-gray {
-  background: url(../images/sprites.png) -40px 20px;
+  background: url(../images/sprites.png) -40px 42px;
 }
 
 .icon-price-gray {
-  background: url(../images/sprites.png) -60px 20px;
+  background: url(../images/sprites.png) -60px 42px;
 }
 
 section.content {
@@ -170,6 +204,16 @@ section.content {
   width: 100%;
   height: 250px;
   opacity: 0.8;
+}
+.tl-list .img-container .title {
+  position: absolute;
+  top: 0;
+  background: transparent;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
 .tl-list .img-container .caption {
   position: absolute;

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- build:css css/compiled.min.css -->
+		<!-- build:css css/compiled/compiled.min.css -->
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.smoothness.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- /build -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/compiled.min.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/compiled/compiled.min.css"> -->
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -17,8 +18,8 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right tl-right-nav">
 				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-event-white"></div>Music <b class="caret"></b></a>
-					<ul class="dropdown-menu">
+					<a href="#"><div class="tl-icon-white icon-event-white"></div><span class="selected">Music</span> <b class="caret"></b></a>
+					<ul class="dropdown-menu tl-sub-menu">
 						<li><a href="#">Technology</a></li>
 						<li class="tl-active"><a href="#">Music</a></li>
 						<li><a href="#">Arts</a></li>
@@ -28,8 +29,8 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-calendar-white"></div>Tomorrow <b class="caret"></b></a>
-					<ul class="dropdown-menu">
+					<a href="#"><div class="tl-icon-white icon-calendar-white"></div><span class="selected">Tomorrow</span> <b class="caret"></b></a>
+					<ul class="dropdown-menu tl-sub-menu">
 						<li><a href="#">Today</a></li>
 						<li class="tl-active"><a href="#">Tomorrow</a></li>
 						<li><a href="#">This Week</a></li>
@@ -39,8 +40,8 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-location-white"></div>Singapore <b class="caret"></b></a>
-					<ul class="dropdown-menu">
+					<a href="#"><div class="tl-icon-white icon-location-white"></div><span class="selected">Singapore</span> <b class="caret"></b></a>
+					<ul class="dropdown-menu tl-sub-menu">
 						<li class="tl-active"><a href="#">Singapore</a></li>
 						<li><a href="#">Philippines</a></li>
 						<li><a href="#">Indonesia</a></li>
@@ -50,7 +51,10 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-price-white"></div>Free - $500+</a>
+					<a href="#"><div class="tl-icon-white icon-price-white"></div><span class="selected">Free - $500+</span></a>
+					<ul class="dropdown-menu tl-price-range">
+						<li><div id="tl-slider"></div></li>
+					</ul>
 				</li>
 			</ul>
 		</nav>
@@ -64,6 +68,7 @@
 						<div class="tl-list">
 							<div class="img-container">
 								<img src="images/list1.jpg">
+								<div class="title">Dev Scouts</div>
 								<div class="caption">
 									Talks on Origami prototyping tool and Rrumble app. Dinner for this meet up is sponsored by 2359 Media... <a href="#">Read more</a>
 								</div>
@@ -82,6 +87,7 @@
 						<div class="tl-list">
 							<div class="img-container">
 								<img src="images/list2.jpg">
+								<div class="title">ICT Business Summit 2014</div>
 								<div class="caption">
 									Join the Singapore Infocomm Technology Federation’s full day conference ‘Intellipod: The Evolution of Mobile... <a href="#">Read more</a>
 								</div>
@@ -100,6 +106,7 @@
 						<div class="tl-list">
 							<div class="img-container">
 								<img src="images/list3.jpg">
+								<div class="title">ChinaTown CoLab</div>
 								<div class="caption">
 									Want to improve China Town tourism?  Join the urban designers, travel experts and technologists at this workshop... <a href="#">Read more</a>
 								</div>
@@ -118,6 +125,7 @@
 						<div class="tl-list">
 							<div class="img-container">
 								<img src="images/list4.jpg">
+								<div class="title">A good meal with others</div>
 								<div class="caption">
 									Your success requires the aid of others. Meet new people and help solve the issues of business over some good food... <a href="#">Read more</a>
 								</div>
@@ -136,6 +144,7 @@
 						<div class="tl-list">
 							<div class="img-container">
 								<img src="images/list5.jpg">
+								<div class="title">Business Rocks!</div>
 								<div class="caption">
 									Come and meet up with a diverse crowd of awesome, interesting folks who love business as much as you do... <a href="#">Read more</a>
 								</div>
@@ -154,6 +163,7 @@
 						<div class="tl-list">
 							<div class="img-container">
 								<img src="images/list6.jpg">
+								<div class="title">Creative CrowdFunding</div>
 								<div class="caption">
 									Co-founder of Pozible, Rick Chen, is sharing what he knows from having helped more than 5,000 projects succeed... <a href="#">Read more</a>
 								</div>
@@ -173,6 +183,6 @@
 		</section>
 		<!-- End Content -->
 
-		<script type="text/javascript" src="js/compiled.min.js"></script>
+		<script type="text/javascript" src="js/compiled/compiled.min.js"></script>
 	</body>
 </html>
