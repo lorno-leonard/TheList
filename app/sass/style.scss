@@ -18,7 +18,7 @@ body {
 	color: #fff !important;
 	background: #000 !important;
 	padding: 18px 5px;
-	height: 55px;
+	height: 50px;
 }
 
 @mixin search_placeholder {
@@ -34,7 +34,7 @@ body {
 		border: none;
 		height: 30px;
 		color: #fff;
-		width: 400px;
+		width: 300px;
 	}
 
 	input::-webkit-input-placeholder {
@@ -62,8 +62,7 @@ body {
 
 		> a {
 			color: #fff !important;
-			padding-top: 13px;
-			padding-bottom: 12px;
+			padding: 13px 5px 12px 5px;
 
 			.caret {
 				float: right;
@@ -97,8 +96,8 @@ body {
 		}
 	}
 
-	li.dropdown, li {
-		width: 175px;
+	li.dropdown {
+		padding: 0;
 
 		a {
 			text-transform: uppercase;

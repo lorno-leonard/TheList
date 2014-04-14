@@ -11,52 +11,68 @@
 	<body>
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<!-- <a class="navbar-brand" href="#">LOGO</a> -->
-			<div class="navbar-text tl-search">
-				<div class="tl-icon-white icon-search-white"></div>
-				<input type="text" placeholder="Type here">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tl-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">LOGO</a>
 			</div>
-			<ul class="nav navbar-nav navbar-right tl-right-nav">
-				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-event-white"></div><span class="selected">Music</span> <b class="caret"></b></a>
-					<ul class="dropdown-menu tl-sub-menu">
-						<li><a href="#">Technology</a></li>
-						<li class="tl-active"><a href="#">Music</a></li>
-						<li><a href="#">Arts</a></li>
-						<li><a href="#">Movies</a></li>
-						<li><a href="#">Theater</a></li>
-						<li><a href="#">Food</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-calendar-white"></div><span class="selected">Tomorrow</span> <b class="caret"></b></a>
-					<ul class="dropdown-menu tl-sub-menu">
-						<li><a href="#">Today</a></li>
-						<li class="tl-active"><a href="#">Tomorrow</a></li>
-						<li><a href="#">This Week</a></li>
-						<li><a href="#">This Month</a></li>
-						<li><a href="#">Next Month</a></li>
-						<li><a href="#">Coming Soon</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-location-white"></div><span class="selected">Singapore</span> <b class="caret"></b></a>
-					<ul class="dropdown-menu tl-sub-menu">
-						<li class="tl-active"><a href="#">Singapore</a></li>
-						<li><a href="#">Philippines</a></li>
-						<li><a href="#">Indonesia</a></li>
-						<li><a href="#">Malaysia</a></li>
-						<li><a href="#">Thailand</a></li>
-						<li><a href="#">Vietnam</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#"><div class="tl-icon-white icon-price-white"></div><span class="selected">Free - $500+</span></a>
-					<ul class="dropdown-menu tl-price-range">
-						<li><div id="tl-slider"></div></li>
-					</ul>
-				</li>
-			</ul>
+			<div class="collapse navbar-collapse" id="tl-navbar-collapse">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="navbar-text tl-search">
+							<div class="tl-icon-white icon-search-white"></div>
+							<input type="text" placeholder="Type here">
+						</div>
+					</div>
+					<div class="col-md-6 pull-right">
+						<ul class="nav navbar-nav navbar-right tl-right-nav col-md-12">
+							<li class="col-md-3 dropdown">
+								<a href="#"><div class="tl-icon-white icon-event-white"></div><span class="selected">Music</span> <b class="caret"></b></a>
+								<ul class="dropdown-menu tl-sub-menu">
+									<li><a href="#">Technology</a></li>
+									<li class="tl-active"><a href="#">Music</a></li>
+									<li><a href="#">Arts</a></li>
+									<li><a href="#">Movies</a></li>
+									<li><a href="#">Theater</a></li>
+									<li><a href="#">Food</a></li>
+								</ul>
+							</li>
+							<li class="col-md-3 dropdown">
+								<a href="#"><div class="tl-icon-white icon-calendar-white"></div><span class="selected">Tomorrow</span> <b class="caret"></b></a>
+								<ul class="dropdown-menu tl-sub-menu">
+									<li><a href="#">Today</a></li>
+									<li class="tl-active"><a href="#">Tomorrow</a></li>
+									<li><a href="#">This Week</a></li>
+									<li><a href="#">This Month</a></li>
+									<li><a href="#">Next Month</a></li>
+									<li><a href="#">Coming Soon</a></li>
+								</ul>
+							</li>
+							<li class="col-md-3 dropdown">
+								<a href="#"><div class="tl-icon-white icon-location-white"></div><span class="selected">Singapore</span> <b class="caret"></b></a>
+								<ul class="dropdown-menu tl-sub-menu">
+									<li class="tl-active"><a href="#">Singapore</a></li>
+									<li><a href="#">Philippines</a></li>
+									<li><a href="#">Indonesia</a></li>
+									<li><a href="#">Malaysia</a></li>
+									<li><a href="#">Thailand</a></li>
+									<li><a href="#">Vietnam</a></li>
+								</ul>
+							</li>
+							<li class="col-md-3 dropdown">
+								<a href="#"><div class="tl-icon-white icon-price-white"></div><span class="selected">Free - $500+</span></a>
+								<ul class="dropdown-menu tl-price-range">
+									<li><div id="tl-slider"></div></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
 		<!-- End Navigation -->
 
